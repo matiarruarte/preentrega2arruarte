@@ -1,24 +1,23 @@
 <!DOCTYPE html>
-<html lang="es-AR">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- Link de fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Link de bootstrap -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
     <!-- Link de css -->
-    <link rel="stylesheet" href="css/styles.css">
-    <title> GF Automotores </title>
+    <link rel="stylesheet" href="css/style.css">
+    <title> AFF Motors </title>
 </head>
 <body>
-    <!-- Inicio del header -->
-    <header>
-        <a href="index.html"> AFF <span>Motors</span></a>
-        <nav>
+    <div class="grid-container">
+        <header class="header-nosotros">
+            <a href="index.html" class="text-white"> AFF <span>Motors</span></a>
+        </header>
+        <nav class="navbar-nosotros">
             <ul>
-                <li>
+                <li class="home">
                     <a href="index.html"> Inicio </a>
                 </li>
                 <li>
@@ -33,20 +32,60 @@
                 <li>
                     <a href="pages/nosotros.html"> Contacto </a>
                 </li>
-            </ul>
+            </ul> 
         </nav>
-        </header>
-        <!-- Inicio del main -->
-    <div class="container">
-        <main>
-            <h2> Encontrá tu nuevo auto </h2>
-            <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus voluptatem numquam, eum, officia qui voluptatibus praesentium optio soluta fugit deserunt maiores suscipit aliquam autem maxime nisi nobis, culpa tempore perspiciatis? </p>
+        <div class="cartel-nosotros">
+            <div class="banner">
+                <h1 class="titulo-primario"> Estás en el lugar indicado <br>para encontrar <br>el auto de tus sueños </h1>
+                <p> Tenemos la flota de vehículos más grande de Argentina y de America Latina. En nuestro catálogo podrás disfrutar de un gran avanico de posibilidades y elegir tu vehículo soñado, incluyendo autos de alta gama, camionetas, aeronaves, jet skis, lanchas y navíos.</p>
+                <p class="contactate">Contactate con nosotros para recibir un asesoramiento personalizado.</p>
+            </div>
+            <button class="button"> Quiero más información </button>
+        </div>
+        <!-- Inicio de main -->
+        <main class="main-nosotros">
+            <div class="contenido-principal">
+                <img src="img/background1.jpg" alt="">
+                <div>
+                    <h2> Visitá nuestro salón comercial </h2>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dicta ipsa sed velit harum animi corrupti obcaecati cum ipsum, unde necessitatibus, aliquid deleniti. Similique odio eveniet sit vel alias possimus. Lorem ipsum dolor sit, amet consectetur adipisicing elit. Facere deserunt minus eveniet, dignissimos delectus repellendus nostrum porro rerum obcaecati consectetur reiciendis exercitationem aliquid omnis laboriosam quae quaerat harum consequuntur quis? Lorem </p>
+                </div>
+            </div>
+            <div class="contenido-principal">
+                <img src="img/atencion.jpg" alt="">
+                <div>
+                    <h2> Nuestra prioridad es la satisfacción de nuestros clientes </h2>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dicta ipsa sed velit harum animi corrupti obcaecati cum ipsum, unde necessitatibus, aliquid deleniti. Similique odio eveniet sit vel alias possimus. </p>
+                </div>
+            </div>
+            <div class="contenido-principal">
+                <img src="img/compra.jpg" alt="">
+                <div>
+                    <h2> Ofrecemos el mejor servicio post-venta </h2>
+                    <p> Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad dicta ipsa sed velit harum animi corrupti obcaecati cum ipsum, unde necessitatibus, aliquid deleniti. Similique odio eveniet sit vel alias possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia expedita necessitatibus minima mollitia ipsa excepturi accusantium, voluptate totam dignissimos qui at facilis voluptas molestiae aspernatur dolorem porro minus nisi assumenda! </p>
+                </div>
+            </div>
         </main>
+        <!-- Inicio de section -->
+        <section class="section-nosotros">
+            <div class="momentos">
+                <h2> Creá recuerdos </h2>
+                <img src="img/momentos.jpg" alt="">
+                <p> Cuando compras en AFF Motors, no te llevas solo un vehículo, te llevas la inmensa posibilidad de crear esos recuerdos que duran para toda la vida. </p>
+            </div>
+            <div class="momentos">
+                <h2> Sé el protagonista </h2>
+                <img src="img/recuerdos.jpg" alt="">
+                <p> Nuestros tests de calidad hechos en Services Oficiales te garantizan altos estándares de confiabilidad, permitiendote pensar solo en disfrutar y vivir esos bellos momentos con las personas que más querés. </p>
+            </div>
+        </section>
+        <Footer class="footer-nosotros">
+            <h3> AFF Motors 2022 &copy; Todos los derechos reservados. </h3>
+            <h3> Seguinos en nuestras redes sociales </h3>
+        </Footer>
     </div>
-        <!-- Inicio del footer -->
-        <footer>
-            <h3> &copy; Todos los derechos reservados </h3>
-        </footer>
-        
+
+      <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

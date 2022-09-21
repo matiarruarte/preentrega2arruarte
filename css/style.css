@@ -1,7 +1,7 @@
 /* Reset */
 *{
     margin: 0;
-    padding: 0;
+    padding: 0; 
     box-sizing: border-box;
 }
 
@@ -13,7 +13,7 @@ body{
 .grid-container{
     display: grid;
     /* gap: 10px; */
-    height: 264vh;
+    height: 263vh;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: .7fr 5fr 5fr .7fr;
     /* 3.96fr */
@@ -49,11 +49,12 @@ body{
     display: flex;
     align-items: flex-end;
     justify-content: flex-end;
-    padding-bottom: 5px;
 }
 
 .navbar-nosotros ul{
     display: flex;
+    margin: 0;
+    padding: 0;
 }
 
 .navbar-nosotros ul li{
@@ -94,11 +95,11 @@ body{
     background-size: cover;
     background-attachment: fixed;
     background-position: center top;
-
 }
 
-h1{
+.titulo-primario{
     font-size: 4rem;
+    font-weight: bold;
 }
 
 .cartel-nosotros div{
@@ -138,7 +139,6 @@ h1{
     background-color: white;
     color: rgb(3, 0, 29);
     border: 2px solid rgba(3, 0, 29, 0.887);
-
 }
 
 /* Estilos de main */
@@ -154,15 +154,18 @@ h1{
 
 .main-nosotros .contenido-principal div h2{
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding: 0;
+    margin: 0;
 }
 
 .main-nosotros .contenido-principal div p{
     font-size: 1rem;
+    margin: 0;
+    padding-top: 1rem;
 }
 
 .main-nosotros .contenido-principal img{
-    width: 30%;
+    width: 40%;
 }
 
 .main-nosotros .contenido-principal{
@@ -176,10 +179,10 @@ h1{
 }
 
 .button-dos{
-    margin: 2rem;
     display: flex;
     justify-content: center;
-    height: 150px;
+    /* height: 150px; */
+    padding-top: 1rem;
     align-items: center;
 }
 
@@ -192,7 +195,7 @@ h1{
 
 .section-nosotros .momentos h2{
     font-size: 1.5rem;
-    padding-bottom: 1rem;
+    padding-bottom: .5rem;
 }
 
 .section-nosotros .momentos img{
@@ -212,6 +215,8 @@ h1{
 
 .section-nosotros .momentos p{
     padding: 2rem;
+    padding-bottom: 0;
+    margin-bottom: 0;
 }
 
 /* Estilos de footer */
@@ -219,14 +224,130 @@ h1{
 .footer-nosotros h3{
     font-size: .8rem;
     font-weight: 300;
+    margin: 0;
 }
 
 .footer-nosotros{
     background-color: rgb(3, 0, 29);
     grid-area: footer;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: center;
     color: white;
-    margin: 2rem;
+    padding: 2rem;
+    height: 5rem;
+}
+
+/* Mediaqueries container */
+
+@media screen and (max-width: 1023px) {
+    .grid-container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .navbar-nosotros .home{
+        display: none;
+    }
+
+    .navbar-nosotros{
+        display: flex;
+        justify-content: space-around;
+    }
+
+    .titulo-primario{
+        font-size: 3rem;
+    }
+
+    .main-nosotros .contenido-principal{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
+    }
+
+    .main-nosotros .contenido-principal img{
+        display: none;
+        order: 2;
+    }
+
+    .section-nosotros .momentos img{
+        width: 50%;
+    }
+
+    .footer-nosotros{
+        flex-direction: column;
+    }
+}
+
+/* Media queries celular */
+
+@media screen and (max-width: 600px) {
+    .header-nosotros a{
+        font-size: 3rem;
+    }
+    
+    .header-nosotros a span{
+        font-size: 1rem;
+    }
+
+    .navbar-nosotros{
+        display: none;
+    }
+
+    .titulo-primario{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+
+    .cartel-nosotros div p{
+        font-size: 80%;
+        margin: .5rem;
+    }
+
+    .cartel-nosotros .contactate{
+        display: none;
+    }
+    
+    .cartel-nosotros div{
+        margin-bottom: 0;
+    }
+
+    .button{
+        font-size: 80%;
+    }
+
+    .main-nosotros .contenido-principal div{
+        margin: 0;
+    }
+
+    .main-nosotros .contenido-principal img{
+        display: block;
+        width: 100%;
+        margin-top: 1rem;
+    }
+    .main-nosotros .contenido-principal div p{
+        display: none;
+    }
+
+    .section-nosotros .momentos img{
+        width: 100%;
+        margin-bottom: 1rem;
+    }
+
+    .section-nosotros .momentos p{
+        padding: 0;
+    }
+
+    .footer-nosotros{
+        display: flex;
+        justify-content: center;
+    }
+    
+    .footer-nosotros h3{
+        text-align: center;
+        margin-bottom: .2rem;
+    }
 }
