@@ -410,7 +410,7 @@ body{
     flex-direction: column;
     margin: 2rem;
     padding: 2rem;
-    background-color: antiquewhite;
+    background-color: rgb(243, 243, 243);
     height: auto;
     border: 1px;
     border-radius: 5px;
@@ -424,7 +424,7 @@ body{
 }
 
 .ventas-nuevos{
-    background-color: antiquewhite;
+    background-color: rgb(243, 243, 243);
 }
 
 .ventas-nuevos h2{
